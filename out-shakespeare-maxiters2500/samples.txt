@@ -1,0 +1,89 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_maxiters2500.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-maxiters2500'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'maxiters2500'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 2500
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+ANGELO:
+And I will kiss you that you have done with a matter.
+
+ISABELLA:
+If I do be not seen thou hast crown.
+
+ANGELO:
+Go on:
+You see to this bottle world.
+
+ISABELLA:
+I have late: there's so no more near in your peace. Fare you not
+beneath to speak.
+
+DUKE VINCENTIO:
+Hortensio, the queen who like a lady in one
+that it seems more right in him of poor great sounds,
+hanging the son; which must not male of the first?
+
+Provost:
+Thou art too discoversed as thou shouldst star
+as teal thousand confess w
+---------------
+
+Men punished, such sweet haste, how a child,
+A poor between withal, who should swing such a body
+That free strange mag, many instruction.
+
+SLY:
+See, here's over--
+
+ABRAHAM:
+Woe to meet my son: in death, a good as need,
+Go, she speaks me, and here, so many hate
+Have won the country's throne of the law,
+Whose lasty of it had seen in my love,
+And purged in the earth of the oof mine eyes,
+If the sun of it other will. Thou wilt say
+This is below I saw thee profane with this
+Event thy true young; and 
+---------------
+
+Messenger:
+The seal'd I have no more. Most good Camillo,
+Play your gracious suits as I, marry mine
+With ears yield, in this time thoughts not scald before.
+But senItize thee the crown of thy blood,
+Being this arm thought expection not my hand;
+Though in thy design fortune here for lovely thee,
+To the end of thy friend, Master France,
+That both this state below redeem'd the north-harse.
+
+NORTHUMBERLAND:
+The other laving else of my love
+Shall to make me ten me to light: as I would
+But will lay wit
+---------------

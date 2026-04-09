@@ -1,0 +1,13 @@
+{
+  "experiment": "baseline",
+  "learning_rate": 0.001,
+  "n_layer": 6,
+  "n_head": 6,
+  "n_embd": 384,
+  "block_size": 256,
+  "dropout": 0.2,
+  "max_iters": 5000,
+  "final_train_loss": 0.619221031665802,
+  "final_val_loss": 1.7079168558120728,
+  "training_time_min": 11.099338738123576
+}

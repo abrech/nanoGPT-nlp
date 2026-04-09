@@ -1,0 +1,85 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_nlayer4.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-nlayer4'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'nlayer4'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 4
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 7.11M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+ANGELO:
+And cowardicials, by my charity,
+And take him some tale here, by me unquite yourself.
+
+ISABELLA:
+Pray you, and your honours.
+
+ANGELO:
+Where is the body matter?
+
+ISABELLA:
+Nay, overmore.
+
+ANGELO:
+Well, be soldier, that they must call attend it.
+
+ISABELLA:
+Have you patiently sometimes to the land,--
+And the issue to them that have here
+A poor great mercy of my brother son; I know you will fled
+The fair of you are.
+
+DUKE VINCENTIO:
+Had he about you forgiving me any and
+His promised man! My
+---------------
+
+Men be so better than I was behold to the sea-sence;
+But with reasons starved me to my grief,
+Though I fear, should show to England's cowk,
+And tears when my stone did scorn their persons.
+
+GLOUCESTER:
+The Richard yield Clarence them gone to hear,
+To make heaven and their whilst weak soul in behalf;
+And so welcome to speak their subjects and big their honours?
+By seven, to this deep shower eyes and approachess
+Be that the ruins of love keeps as he the prince
+By the time wounder for Gloucester's 
+---------------
+
+Men then be well, and I will not go with the crown.
+The disado, and that have worn to be rest mine.
+O Belike, in bloody time great of the news
+And freshes dishonour in this action,
+And fit to ease her mind a wars that fears
+Having not made with their enmity of the field:
+For the rest slow great of the world's deed,
+That murdering lies made their shocks of their deeds' lady,
+And march in despite and business so fills;
+And so obscure her eyes to make her enemy.
+Welcome, serve you, sirrah: old God'
+---------------

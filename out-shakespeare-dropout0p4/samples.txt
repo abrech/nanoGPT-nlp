@@ -1,0 +1,104 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_dropout0p4.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-dropout0p4'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'dropout0p4'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.4
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+And they bring with the sweet man to my bed.
+
+CLARENCE:
+My lord,
+My Lord of Norfolk to be determined;
+But, my father, I would not have of it.
+
+GLOUCESTER:
+What said the neck is the tiding to thee?
+
+QUEEN MARGARET:
+Alas, dispatch him, my gracious lordship words:
+Then I can perform the morning to thee
+To Warwick, therefore, and my right grace,
+And so much for us to dine thy face
+And my soul to thy flesh thee for a death?
+
+KING RICHARD III:
+Warwick, Warwick, stay in courtesy?
+
+KING RICHARD IIII:
+My
+---------------
+
+Menenius, and shall be so gone?
+
+CORIOLANUS:
+Sir, masters, therefore; and be not the world.
+
+CORIOLANUS:
+Sir, I will go.
+
+AUFIDIUS:
+Farewell.
+
+LARTIUS:
+No, let me be a man of this more.
+
+CORIOLANUS:
+I thank you, sir, it is not so.
+
+CORIOLANUS:
+Well, good friar!
+
+AUTOLYCUS:
+This is a thousand burn and death will not be dead;
+We have heard it not strange.
+
+CORIOLANUS:
+But to this one of the centure, will take it
+Be that the must perform back of some tender.
+
+Clown:
+We will obey the purse to the me
+---------------
+
+Men than I be spoke it, I would were dead.
+
+LORD ROSS:
+Alas, of all that hath broken for rest mine.
+
+CLIFFORD:
+My lord, the time of the which he should revenge
+Before my advice: but I see thee as I
+Because me, to thee for in this man to-night;
+But I will be detect for Henry's mother;
+For therefore thou dost know my worship there.
+Ah, and God save his; I hope to meet,
+So thou art hear the prince and by the town,
+Whose body wholesome heads not on his fortune,
+But let him so, I have been with him,
+
+---------------

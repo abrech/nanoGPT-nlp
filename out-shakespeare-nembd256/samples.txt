@@ -1,0 +1,83 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_nembd256.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-nembd256'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'nembd256'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 4
+n_embd = 256
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 4.74M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+When the bride will be long to bed, that you will grave
+My hand of barreth foul of his back:
+And all aways my father's minds he of the court.
+But I will with a grieve sense will it live.
+
+KING RICHARD II:
+Alas, my lord, dispatch her body in the princess,
+At fall the way of the ground into his mother
+And the good Clifford's title right grace,
+And so much borrow that ne'er the son;
+To his father pince of war fair Lord Somerset;
+But as if his ward and his great husband king,
+And I will change the c
+---------------
+
+Men part kneels, though thy best so much his meeds,
+And send me and the sea blood of war,
+In the much friend should sold the case,
+That which she did she lives from Camillo,
+Is it moved by me: in that read Romeo's side
+O'er my suitors, in the condition arms
+And bear the which the way soul of limbs and despite
+By the right comes of my love, and play'd in the earth
+Of the tomb, underneath the sun man is right.
+
+MENENIUS:
+Do you speak to be thought you will be reward,
+Live with the cause of the com
+---------------
+
+Messenger:
+The peace, I have no made her mother, I can tell you.
+
+CLARENCE:
+What will your wives?
+
+KING HENRY VI:
+Why, so I think, fair shadows a born.
+
+HENRY BOLINGBROKE:
+Where comes you be an engrosing lament?
+
+DUKE OF AUMERLE:
+Tapster have ever I did;
+Save thou well, and false me long to the oracle,
+Nor back or nature for her death made her fair close?
+
+KING RICHARD III:
+I can tell her sovereign but from the king's bed.
+On her let the nurse my wife tender the queen:
+Why do the garland life th
+---------------

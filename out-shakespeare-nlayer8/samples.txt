@@ -1,0 +1,87 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_nlayer8.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-nlayer8'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'nlayer8'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 8
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 14.19M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+ANGELO:
+And come, my lord, the miserable of that
+hath made the office of his head, they see him at,
+and so he hath not born him: he make it for
+the land; and their ensing, will it till return
+their point.
+
+Provost:
+I am as a pretty point.
+
+Provost:
+He hath found me with opposition; but yet, my thoughts,--
+
+DUKE VINCENTIO:
+It is a very point of poor great restrain
+me, report so; sir, there's no malice that finds
+double and full of strength: and all sight for him
+that reasons of your changed voic
+---------------
+
+Men passion married with his eye of a child,
+And small we met at his house and so life
+And he will confess them at mine.
+
+ANGELO:
+What is the sea?
+
+Provost:
+Good my lord,
+When he knows not when the heart is not so:
+Which is he spent that is, he is more than the babe
+Of great England's royal powers. What said he now?
+
+ISABELLA:
+I say, let it be post not so.
+Come, madam, come, my lord; now the queen of my hands
+Make part the silent measure of your hands:
+So, it was done bowling and full of conscie
+---------------
+
+Men talk of war. Their city in a gentleman
+Laugh, her noble Bona, and actisa hard
+Come, make my name in earnestness could I strike
+And then accusation with blood oIn the admitted
+To make the angels of my lamentation.
+
+KING RICHARD II:
+Hast thou wouldst make detecty of Hereford?
+Thou lay'st thy country of justice: 'tis not hand,
+Thy brother hath since; there being on thee,
+And be heard to punish and by the post,
+Which banish'd upon the deed, thou camest,
+And deposed by self-eyes, so draw of him,
+
+---------------

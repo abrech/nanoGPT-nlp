@@ -1,0 +1,13 @@
+{
+  "experiment": "nembd256",
+  "learning_rate": 0.001,
+  "n_layer": 6,
+  "n_head": 4,
+  "n_embd": 256,
+  "block_size": 256,
+  "dropout": 0.2,
+  "max_iters": 5000,
+  "final_train_loss": 0.9761224985122681,
+  "final_val_loss": 1.4661723375320435,
+  "training_time_min": 6.531469722588857
+}

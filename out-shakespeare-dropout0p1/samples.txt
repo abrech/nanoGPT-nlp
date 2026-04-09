@@ -1,0 +1,100 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_dropout0p1.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-dropout0p1'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'dropout0p1'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.1
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+KING RICHARD III:
+The lady that is thy before and run my dagger
+My wrong are with her back that are are run and not
+To break the flower of thy course to live.
+Which, songs will I not revenge to bear thee!
+
+QUEEN ELIZABETH:
+So thou must have prepared speed you:
+Though I must be the queen thou mother
+To Warwick thy first words are in hands.
+
+KING EDWARD IV:
+Hear me, noble lord; and I have:
+'Twas made Earl, and Edward not trumpets,
+But yet was advanced and flowering sup?
+
+GaoetH:
+Go, my lord, I wi
+---------------
+
+Menenius, and some seem other hath not heard of?
+
+First Senator:
+You have been so near to be so much in something
+case, more instremble worse of ever.
+
+First Servingman:
+Let them know them find upon the common as you.
+
+MENENIUS:
+Where is it she needs must.
+
+First Servingman:
+Either the selvy wind of a despised bow.
+
+SICINIUS:
+So surely I in him.
+
+BRUTUS:
+No doubt, so I do it is.
+
+Second Servingman:
+Your honour-bedeeds to be blown well be thought, and you
+become thing.
+
+CORIOLANUS:
+I thought to b
+---------------
+
+Menenius is well, and I will not get.
+Make my brother with a body on thy hand,
+To prove me with the sweet words of the sword,
+Thou wilt be declined by my fair babeIng my advantage,
+And find make my brother more than the leisure.
+
+GLOUCESTER:
+See the deadly sweet lyfellow weep more love,
+How the old consort is dead of the form?
+
+BUCKINGHAM:
+Why fair condicts brow doth hear your country's death.
+
+KING EDWARD IV:
+Welcome, ere you must heart not be by meeT, speak.
+
+GLOUCESTER:
+I am not all: old God'
+---------------

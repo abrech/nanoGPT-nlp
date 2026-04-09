@@ -1,0 +1,13 @@
+{
+  "experiment": "bs64",
+  "learning_rate": 0.001,
+  "n_layer": 6,
+  "n_head": 6,
+  "n_embd": 384,
+  "block_size": 64,
+  "dropout": 0.2,
+  "max_iters": 5000,
+  "final_train_loss": 1.163043737411499,
+  "final_val_loss": 1.4756922721862793,
+  "training_time_min": 3.170753320058187
+}

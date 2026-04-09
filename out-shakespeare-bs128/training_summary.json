@@ -1,0 +1,13 @@
+{
+  "experiment": "bs128",
+  "learning_rate": 0.001,
+  "n_layer": 6,
+  "n_head": 6,
+  "n_embd": 384,
+  "block_size": 128,
+  "dropout": 0.2,
+  "max_iters": 5000,
+  "final_train_loss": 0.9388723969459534,
+  "final_val_loss": 1.489699125289917,
+  "training_time_min": 5.665997870763143
+}

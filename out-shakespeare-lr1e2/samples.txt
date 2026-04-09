@@ -1,0 +1,95 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_lr1e2.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-lr1e2'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'lr1e2'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 0.01
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+ANGELO:
+And comfort is not the disposed execution
+Of the day taughter of her will be to heard.
+
+ISABELLA:
+I have say your most offices for the court.
+
+ISABELLA:
+Now, since will it that visit it be none:
+Well, by tell in you have she counsel: but the speak you:
+If you may patiently to this own of all of your while
+is as the most of a cheeking strong of his busines
+Inter first of mighty must with all of all.
+
+Provost:
+Here's his body, you are advance.
+
+ESCALUS:
+I think you tell the promise for hi
+---------------
+
+Menenius, and such of the gatest of a child,
+As not between throat them as to me the world.
+
+SICINIUS:
+Ye're should so, made it be that work.
+
+CORIOLANUS:
+The very diss'd to the place?
+
+CORIOLANUS:
+As the gods as not come,
+Against her with heart.
+
+CORIOLANUS:
+But I will were but with some it.
+
+CORIOLANUS:
+No, good Marcius.
+
+Second Servingman:
+He has a noble and your tribuness, to the noble eyes
+To lip your coward to him, besides, we welk to carrieve the world;
+But, therefore it for God, know you
+---------------
+
+Menenius it well, as I can son away when the very,
+Think that I am not were should meet me we mine.
+
+CORIOLANUS:
+So it so I them things which heard the gods, what I have
+We are to't the very any ink. Away!
+
+COMINIUS:
+Let him all men't, what she would in the detection
+With her mother brook'd the oldier of justice: 'tis not have
+With bear substain in companion.
+
+AUFIDIUS:
+They say have been seem and true, they will not been
+In but a thing with one their tender to light:
+He have the garland late th
+---------------

@@ -1,0 +1,13 @@
+{
+  "experiment": "lr5e3",
+  "learning_rate": 0.005,
+  "n_layer": 6,
+  "n_head": 6,
+  "n_embd": 384,
+  "block_size": 256,
+  "dropout": 0.2,
+  "max_iters": 5000,
+  "final_train_loss": 0.8797844052314758,
+  "final_val_loss": 1.5275286436080933,
+  "training_time_min": 11.068186438083648
+}

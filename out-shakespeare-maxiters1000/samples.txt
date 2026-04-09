@@ -1,0 +1,87 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_maxiters1000.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-maxiters1000'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'maxiters1000'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 1000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+And they be descended a sister
+That the beauter of Oracliffolk'd
+My Lord of Nurshalt be arms?
+
+DUKE OF AUMERLE:
+Only, my lord,
+You shall be the covert of the beggarest?
+
+DUKE OF YORK:
+What shall I know not be absence like to his husband?
+Ah, stay the steed years to see and their loss' things to their oath;
+And the city o'er most rivers which he is come.
+
+LORD ANNE:
+O, then for the greater to thy fledge,
+To fight the former for be art obdinate,
+Fall with her biding me as it no much stones of thei
+---------------
+
+Menenius, be a mild for our behalf; and myself
+And fortune's lady. Your countrymen, let me be dead.
+
+MENENIUS:
+I thank, my lords, I must not.
+
+LEONTES:
+The lord:
+God and be soldier in their wholemn his part, bear not come,
+Besides her but do I do, six him.
+
+CORIOLANUS:
+What is now the Tower? I may make the wolf I must dead?
+
+LEONTES:
+No. I know the noise, I will resolve to this determiness.
+
+CORIOLANUS:
+Good sir. Go, go, cousin.
+
+BRUTUS:
+The crown,
+For the crown contive to the sea upon the gife 
+---------------
+
+Messenger:
+The people of the conscience like o'erwhere the adopt,
+The action hour of them. But in some tenders,
+By the store great of the new-house, therefore be none
+My advicience and time one beggar. Do not attend
+The leisure witness what she would in this strong's land,
+That witness of grace of the world and friends rid there.
+Ah, and God night, stay as lost the world's north:
+And by myself and news no more, my very eleven me;
+And therefore my wife tender them groans of this chair:
+By let me 
+---------------

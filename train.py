@@ -19,6 +19,7 @@ $ torchrun --nproc_per_node=8 --nnodes=2 --node_rank=1 --master_addr=123.456.123
 import os
 import time
 import math
+import json
 import pickle
 from contextlib import nullcontext
 
@@ -248,7 +249,8 @@ if wandb_log and master_process:
 
 # training loop
 X, Y = get_batch('train') # fetch the very first batch
-t0 = time.time()
+training_start_time = time.time()
+t0 = training_start_time
 local_iter_num = 0 # number of iterations in the lifetime of this process
 raw_model = model.module if ddp else model # unwrap DDP container if needed
 running_mfu = -1.0
@@ -331,6 +333,31 @@ while True:
     # termination conditions
     if iter_num > max_iters:
         break
+
+if master_process:
+    # estimate final metrics at the end of training and save a summary file
+    final_losses = estimate_loss()
+    train_time = time.time() - training_start_time
+    summary = {
+        'experiment': wandb_run_name if wandb_run_name else out_dir,
+        'learning_rate': learning_rate,
+        'n_layer': n_layer,
+        'n_head': n_head,
+        'n_embd': n_embd,
+        'block_size': block_size,
+        'dropout': dropout,
+        'max_iters': max_iters,
+        'final_train_loss': float(final_losses['train']),
+        'final_val_loss': float(final_losses['val']),
+        'training_time_min': train_time / 60.0,
+    }
+    summary_path = os.path.join(out_dir, 'training_summary.json')
+    with open(summary_path, 'w', encoding='utf-8') as f:
+        json.dump(summary, f, indent=2)
+    print(f"Saved training summary to {summary_path}")
+    print("Training summary:")
+    for k, v in summary.items():
+        print(f"  {k}: {v}")
 
 if ddp:
     destroy_process_group()

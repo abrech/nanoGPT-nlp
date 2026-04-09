@@ -1,0 +1,91 @@
+Overriding config with C:\Code\_projects\nanoGPT-nlp\config\train_shakespeare_char_lr1e4.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-lr1e4'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'lr1e4'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 0.0001
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+KING RICHARD II:
+Shall be be made to be so gentleman.
+
+QUEEN ELIZABETH:
+When we were that didst and sweet my face,
+And when he better of this body slander body.
+
+KING RICHARD III:
+Give me the death of God, and men like die;
+For he much in your grieves hath denied to know
+The lady of my life to that move my good Camillo.
+Then do reverse my means soul
+And strumpet did not the son; but therefore you come,
+To fight a good morrow, being by your ardined,
+And here hath courted and your banishment vow,
+---------------
+
+Men pardon, marry, I will give me
+That I have spoken me of my ready should
+I have no such as the much friends.
+
+DUKE VINCENTIO:
+Ay, my liege.
+
+LUCIO:
+Ay, but the duke.
+
+ISABELLA:
+My liege.
+
+DUKE VINCENTIO:
+Releasons, come, sir, sir, then it die now,
+You are any bear to give your witness a visit;
+Which you command, you do remember your desire
+My direction.
+
+LUCIO:
+I know to you, do not speak your party.
+
+LUCIO:
+Be that I, but we give you must not have a fight
+By this impossite and fully begggar.
+
+---------------
+
+Mercy, my lord;
+The proclaim near of his mother, which he says all
+The children gallow, makes mine own leads
+Since the storm of his faction, and so bear
+He bears of his cause in close of his ancient.
+
+LUCIO:
+Alack, by heaving breathed my hands and I did;
+Sister his country shame upon myself the old conserves
+His ranks crown'd after back: but not in state,
+All true that the news must be graceful distructed
+Up the lawful explent; which they are no carefull pluck
+Slew to see it at as a rank, and th
+---------------

@@ -1,0 +1,83 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_nembd128.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-nembd128'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'nembd128'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 4
+n_embd = 128
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 1.19M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+ANGELO:
+And come, where you that you be you will grave
+My have no barrit after him to be determiate
+Twice my father, and I make thee to the child
+Of would be eg in easy. Wilt all make overture.
+
+WARWICK:
+Alas, my mind noble liege, my lord:
+The princess, why most name or of this death:
+I will met again Will to thy high well made thee
+And him he poor of his business nunrsed for the
+great which I know of which Prince I will be be and
+To be said dance with her brothers. Camillo
+Him his changed and 
+---------------
+
+Men part, I must thou come thee, so a change.
+
+DUKE OF YORK:
+Art with me such a find welcome, whom confess
+I should so, my lords of my earth.
+
+LUCIO:
+A prevove of my sovereign sight virtuous so upon thee,
+Which on your good gracious shall dishonour,
+To the want bear that speak me was so leving mann.
+
+DUKE OF YORK:
+Marry, my lord, and let it him the name,
+That thy severest is in out of the cellenge will;
+Good what thou wilt say this be balm of soul;
+For thou mayst do it, would I fear;
+To know you
+---------------
+
+Me runal in was. Their fit once when he lies
+The day, not take and not weep should
+As there villain so leave time this son,
+Or much a word, and a born warrant before
+As tale the cause of the deadly of my lament!
+
+FLORIZEL:
+Sir, what is there centrements to see they will!
+For thou makest present of the world a defend
+From unto the life and be night, stay as lost
+Then thou queen'st thy be: they are here the power.
+
+MISTRESS OVERDONE:
+Tell me, thom Three tender there passage,
+Whose statute of thee 
+---------------

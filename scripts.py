@@ -1,0 +1,1 @@
+# python sample.py --out_dir=out-shakespeare-baseline --device=cuda --num_samples=3 --max_new_tokens=500

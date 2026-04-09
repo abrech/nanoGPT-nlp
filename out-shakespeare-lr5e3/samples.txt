@@ -1,0 +1,77 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_lr5e3.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-lr5e3'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'lr5e3'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 0.005
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+When the bride with the sweet man and beauty encounter'd
+Beating him to the purpose them crying.
+
+Let what my father was never
+Your proof in her tomb with my bed intelling,
+A ladiest drop the deed of noble living self:
+The earthly drum, when I came in the tyrants
+Of thy foot and destroying the common of the hour,
+And see, all the world whip the poor of his burthen,
+And the fire-realm of the wretch of his face
+And growing and blood of thy sad advance.
+What stay is thy cause? your brother's father
+---------------
+
+Men part, and such seems that hath had ever sound;
+The world is a worthy guide with the crown.
+
+JULIET:
+I must not make.
+
+JULIET:
+Peace it, thou dost when I vantaged thee to desire her;
+How is the husband is that never more victory
+Where is the news of the war? bear thee from the war,
+To whom the lamb of the last, this and the wise,
+The midwife of one honour of your trial:
+Her son Lord of Norfolk, will the city?
+And so the silent we send the crown,
+For the crown can imagine unto the queen.
+
+GLOU
+---------------
+
+Men take it well, as I can sleep, as he loves
+Where is this doing on thy harsh and men,
+The villain several of this country,
+The king was now to the sea
+And swear I have a cause of thee,
+And all the time of thy cell thee singular.
+Look, and see thee, if thou stick for Henry's mother's love,
+Thy old conscience the Tower, the king, and these sleeps his;
+The flower doth his queen and first-day
+The pronounce of the place of the north of thee
+Of them the ears of the light: see, I am not all:
+Flatter'
+---------------

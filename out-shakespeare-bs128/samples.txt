@@ -1,0 +1,88 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_bs128.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-bs128'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'bs128'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 128
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+KING RICHARD II:
+Say that stars is to Baynard's son?
+
+SAMPSON:
+
+GREY:
+What, shepherd: but did hoar, and sweet something on
+me
+Your promferency to make displease itself.
+
+GREGORY:
+Nay, then; and I know not.
+
+GLOUCESTER:
+Farewell: some convey well; and then you love us.
+But, this deed is your love and only so did.
+
+LADY ANNE:
+Faith, Edward, my lord, I will not do an every traitor;
+And therefore, I love thee for a deed of trade,
+That thou hast advanced him for his blood and he
+His promised after-l
+---------------
+
+Men pardon, marry, I'll throw him.
+
+SICINIUS:
+We will the means and the crown,
+Being a greater goodly friend still as long
+This poor bleedings have deserved you: if it be
+To desire it to the state, and the Romans are come
+To say the shoulder devotion of the child.
+
+Third Servingman:
+'Tis with a longer to supple him; if he come his
+brows to us, which in the Capitol would hold it
+often his cheeks and cometal, with his power of league,
+which is the hum of his country, the other is force
+To know his
+---------------
+
+Men that I bear a god-deed Hastings with me
+To have private to the common more of thee,
+Then thine eyes of my infidels. Go, go, go with thee,
+To see thee that can I have a cause of this!
+
+DUCHESS OF YORK:
+My lord, in another conceit to the world.
+
+KING RICHARD III:
+Bid her speak up the spleen thou art of justice:
+Thou cried'st, and be mad; and this still below'd,
+How hold the bed the beggars of Richard,
+Return, plantaging who hath the deed of the wreeches
+To slall possess'd your soldiers, and th
+---------------

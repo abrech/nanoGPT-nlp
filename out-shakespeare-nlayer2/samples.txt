@@ -1,0 +1,96 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_nlayer2.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-nlayer2'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'nlayer2'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 2
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 3.57M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+Clown:
+So inconstant as you are: you bear you.
+
+Shepherd:
+What news? what is your honour? what's the world you for
+a wizoner than the officer of this night, and if
+ever you that you drop the country's proceeding
+pelprinces; and he may charge the bails
+have foul to see him and gold him.
+
+Shepherd:
+It is not to do exile, the morning Edward is company.
+
+YORK:
+
+YORK:
+In bruit first; I know not when I come, for I should not.
+
+HENRY BOLINGBROKE:
+Saddle me, Edward heir cousin,
+And yet I say an Edward,
+---------------
+
+Menenius, and such a fearful that
+bears my foot on the world is an enemy: but I will be consent
+of confessions to castle. And as I thank you.
+
+LUCIO:
+A pretty to-morrow!
+
+DUKE VINCENTIO:
+The state of you are to London, to make
+spent the victory of more than the bearing great-brother than which may make the world
+to his heart and subject. I know thee were do this,
+since I say it often now.
+
+DUKE VINCENTIO:
+This is that I have learn'd to keep your hands:
+His countrymen, and there is come to what e
+---------------
+
+Menenius is a whoremain it shall go with the
+contractise that I am not well short
+thee, married with thee words.
+
+MENENIUS:
+O, the foot of thy case,
+that Earl of York madam, the city are the air.
+
+SICINIUS:
+I am already thing but made my hand; I think
+'Tis so thou wert so, that will be spoke,
+If thou not, be gone to prove his ready burnts,
+Who this contractless of the law of the heast.
+
+SICINIUS:
+What is the gods that he shall not?
+
+MENENIUS:
+What's thee you to light?
+
+MENENIUS:
+But what let her
+---------------

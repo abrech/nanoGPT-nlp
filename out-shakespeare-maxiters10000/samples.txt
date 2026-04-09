@@ -1,0 +1,112 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_maxiters10000.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-maxiters10000'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'maxiters10000'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 10000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+ANGELO:
+And cowards it by them again.
+
+ISABELLA:
+Bring them, take the baby, and with the world
+Have sworn a confusion that makes them of it.
+
+ANGELO:
+Think'st thou the neck; for that thou shalt be not a piteous enemy?
+This is this the child will be so little with the crown?
+
+ANGELO:
+Not I, but that most counsel Claudio in the crown,
+And his consort of his burthen movers,
+If I am not to shame to all officious rest,
+If I have been as too hard as a courtier,
+You in this accase your blood, and vow 
+---------------
+
+Men part, and some service when he hath most meet;
+No queen withal, show her her hands to our highness.
+
+Second Murderer:
+And how now! will your eyes?
+
+First Murderer:
+My lord, will you stir him?
+
+First Murderer:
+Here's Claudio, he will not die to some arm'd him.
+
+Messenger:
+Enough a king.
+
+CLARENCE:
+Come, come, lord Montague, I say;
+No. I know thou well, we are resolved of thee.
+
+KING LEWIS XI:
+Now, my lord with that thou saw thee to be thou so.
+
+GLOUCESTER:
+Say thou so? there is not thine eyes
+---------------
+
+MARIANA:
+I buy soft in the senate of Lancaster.
+
+LUCENTIO:
+Who, what?
+
+LUCIO:
+So well?
+
+CLAUDIO:
+The king was in his executioner:
+How would you a body grow benched now?
+
+LUCENTIO:
+What, is't a fellow?
+
+DUKE VINCENTIO:
+I were not money?
+
+Provost:
+I would that you are loathed famous? I say.
+
+DUKE VINCENTIO:
+Sir, I have not show'd my heart, be your hand; you.
+
+Provost:
+Follow your husband.
+
+DUKE VINCENTIO:
+Return you, sir, let you take it.
+
+Provost:
+Here comes your queen: so, I have a word of her
+A
+---------------

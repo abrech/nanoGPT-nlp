@@ -1,0 +1,99 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_bs64.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-bs64'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'bs64'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 64
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+Clown:
+So, who does it be stranged?
+
+MENENIUS:
+Signior Mercutio!
+
+FLORIZEL:
+How now!
+
+PAULINA:
+Have you not heard the means?
+
+YORK:
+Madam, I can tell thee, when it was not with the clouds?
+Say you now, how you shall link that the crown with a child.
+
+MENENIUS:
+Mark your daughter gone:
+I will make all all the head is as we are,
+And as in himself and give me unto a mountain,
+I'll spoke a shadow prayers to faint.
+
+CORIOLANUS:
+I shall tell you
+are all contrary; he hath keep'd no more stones of thei
+---------------
+
+Men pardon, I shall find them at once and see
+the manner of the accusation of mine honour of
+the much friends.
+
+DUKE VINCENTIO:
+Ay, my lord, Isabel, and my lord, if you call ours.
+
+Provost:
+He is a husband of the next,
+More my sun is gone of her.
+
+First Servant:
+And there's no more means than the news of the law.
+
+Provost:
+Heavens me well, and with the sea that you have touch'd
+The ornament of the wall; and with other court
+All England keeps as he met profess where the
+duke englecture of her com
+---------------
+
+Messenger:
+The peace, I have no more. My mother, I can defy to
+the conscience, and the embracements of the sight,
+Which with great of the dreams and the next womenIsh
+That their cause of the deadly people's death.
+Look, let me not not my harm excellenies:
+The time were he here perform'd, therefore they do be
+known our crown'd after barks? but if it can be
+closer the profane be come so.
+
+CAMILLO:
+I never thank no lady.
+
+LEONTES:
+Why, I am not your wife.
+
+KING EDWARD IV:
+Why, you will return him, 
+---------------

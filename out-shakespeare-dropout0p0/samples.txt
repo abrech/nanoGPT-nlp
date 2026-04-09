@@ -1,0 +1,91 @@
+Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_dropout0p0.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-dropout0p0'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'dropout0p0'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.0
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+
+CORIOLANUS:
+O, my most genter miserable, all and rude the
+law of the babe, used the tracket thou endward, I do
+not put out heavens, to find the valiant libe
+embirded to content to clutve the death of him.
+
+CORIOLANUS:
+For all the manner has the baits of tyrans
+By sun and alliance; but like to that
+To Warwick thee in the storm, and Tybalt's death,
+And he thus that none firsts are greaterful fears,
+Unatured dare done of thy house!
+
+CORIOLANUS:
+Had you are standing murder'd no much sold
+To follow
+---------------
+
+Menerable secrey.
+
+HERMIONE:
+Thanks, I have hope, myself all my fear; stay
+I have no less of the much frown: she that love
+Is as he lose as thou ever when movest it
+Canst to the place; these so noble soul's flattery,
+Who loves his heart, if the news out
+With him about against the way for thy burlife,
+Come, welcome to speak to himself?
+Therefore, Come to London, your daughter,
+Be steem'd to entertain poor and with thy commons,
+With look kept your hands part.
+
+DERBY:
+Live worthir fair;
+To know our
+---------------
+
+Me runner.
+
+MARCIUS:
+Where she is that Rulchmond, her news; to all
+The causes of the neederess that sever worth
+By the storms that for the days
+The rest, for what I have a cause but falls
+Of all inker's blame, to liberied.
+
+FRIAR LAURENCE:
+Cousin, I did to see the forward,
+That Tranio loves the old consul,
+The service shall be far begun, be long in statue.
+
+ROMEO:
+Gunt the notice the bend seem this buy fair.
+
+MERCUTIO:
+I am not wase in this to matter, tender the
+city insolences, so art as as wel
+---------------
