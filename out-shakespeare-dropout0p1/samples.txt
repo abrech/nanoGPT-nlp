@@ -1,4 +1,4 @@
-Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_dropout0p1.py:
+Overriding config with C:\Code\_projects\nanoGPT-nlp\config\train_shakespeare_char_dropout0p1.py:
 # Baseline configuration
 out_dir = 'out-shakespeare-dropout0p1'
 eval_interval = 250

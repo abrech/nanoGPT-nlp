@@ -1,4 +1,4 @@
-Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_lr5e3.py:
+Overriding config with C:\Code\_projects\nanoGPT-nlp\config\train_shakespeare_char_lr5e3.py:
 # Baseline configuration
 out_dir = 'out-shakespeare-lr5e3'
 eval_interval = 250

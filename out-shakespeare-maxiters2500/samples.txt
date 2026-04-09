@@ -1,4 +1,4 @@
-Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_maxiters2500.py:
+Overriding config with C:\Code\_projects\nanoGPT-nlp\config\train_shakespeare_char_maxiters2500.py:
 # Baseline configuration
 out_dir = 'out-shakespeare-maxiters2500'
 eval_interval = 250

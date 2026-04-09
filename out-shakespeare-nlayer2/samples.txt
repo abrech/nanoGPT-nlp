@@ -1,4 +1,4 @@
-Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_nlayer2.py:
+Overriding config with C:\Code\_projects\nanoGPT-nlp\config\train_shakespeare_char_nlayer2.py:
 # Baseline configuration
 out_dir = 'out-shakespeare-nlayer2'
 eval_interval = 250

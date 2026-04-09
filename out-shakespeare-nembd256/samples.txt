@@ -1,4 +1,4 @@
-Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_nembd256.py:
+Overriding config with C:\Code\_projects\nanoGPT-nlp\config\train_shakespeare_char_nembd256.py:
 # Baseline configuration
 out_dir = 'out-shakespeare-nembd256'
 eval_interval = 250

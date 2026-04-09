@@ -1,0 +1,86 @@
+Overriding config with C:\Code\_projects\nanoGPT-nlp\config\train_shakespeare_char_lr5e4.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-lr5e4'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'lr5e4'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 0.0005
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+Clown:
+So you will be long to be so?
+
+BRUTUS:
+What man?
+
+Catchingman:
+Will you have been deal?
+
+CAMILLO:
+Pray you, sir, I must be speakful.
+
+BENVOLIO:
+I will be it enough, not till it over-pace.
+Where is there? when will you do not proceed?
+
+SICINIUS:
+Why you love you remain? what's they would that
+you have done evident to my curse and shore
+A poor gentleman of a mother, an honour'd to speak.
+
+BRUTUS:
+If it be so much by this being,
+She was advanced to her by the straight noon:--
+
+SICINIUS:
+No,
+---------------
+
+Men your knees your faces with me! I have seen
+And forth an ill-angel of the head of your grace
+To countermand the mighty morning of their strokes,
+Perhaps over their soldiers shall be made
+On their subjects of Lancaster loves the court,
+Which in Froth art thou bear'st the crown'd and more
+Divine on my desire clouds in the seat
+Of my love duty post to her breath,
+Though to my underness and eyes more protectors
+Be than thy business. Tell me of some merry,
+I do wrong thee wounder to my young grave
+---------------
+
+Men that I bear my sight, which was with the crown,
+That was of my country's head in the world,
+And so men of infinite so fair like a word,
+And all the garden ballIng my age.
+Methinks I seek an empty of them nature,
+The one goes man is wallinged to grieve;
+But which is his spame told my princely direction,
+The sentences must be a little straight in strew's lover,
+And he will stand for sorrow to die by the town,
+Which bound to them the and unto my wretchedged sleep,
+And so it is, so doublelly wer
+---------------

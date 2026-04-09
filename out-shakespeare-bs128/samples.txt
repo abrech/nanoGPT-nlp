@@ -1,4 +1,4 @@
-Overriding config with C:\Code\_projects\nanoGPT\config\train_shakespeare_char_bs128.py:
+Overriding config with C:\Code\_projects\nanoGPT-nlp\config\train_shakespeare_char_bs128.py:
 # Baseline configuration
 out_dir = 'out-shakespeare-bs128'
 eval_interval = 250
