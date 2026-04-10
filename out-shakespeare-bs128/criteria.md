@@ -1,0 +1,4 @@
+- Rechtschreibung größtenteils richtig, Grammatik auch aber inhaltlich sinnfrei, viele Satzzeichen?
+- es gibt mehrere leute, aber es ergibt keinen Sinn wie sie miteinander sprechen, niemand sagt mehrmals was
+- 1. scheint kein wirkliches Thema zu geben 2. auch nicht so 3. auch nicht so
+- /
