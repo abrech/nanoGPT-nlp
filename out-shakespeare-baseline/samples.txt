@@ -1,0 +1,84 @@
+Overriding config with config/train_shakespeare_char_baseline.py:
+# Baseline configuration
+out_dir = 'out-shakespeare-baseline'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'baseline'
+dataset = 'shakespeare_char'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cuda' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+Overriding: num_samples = 3
+number of parameters: 10.65M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+
+
+CORIOLANUS:
+'Tis no money than is to obey.
+
+CORIOLANUS:
+The hands are the public here?
+
+MENENIUS:
+Why, then.
+
+VOLUMNIA:
+In heavens! the way I have well long estired
+Even in the sea, to be patient like his eyes
+Of like him; whether 'tis my son, that she would have she
+Been this deserved with me, and only so do I prize thee
+A body of cheek-meant,--
+
+VALERIA:
+The woman'st thou of minister:
+Ever you have a fair rest monasion for being,
+Show'd against his great honour to make no more store,
+But whi
+---------------
+
+Men please your most grace and me
+To see him or noble two times and thought it
+To be sure of this score some should sound up.
+
+ROMEO:
+Tears thou dost die too, to make the excuse.
+My virtuous son, do not my Richard: thou art going.
+
+CAPULET:
+My lord, good night! bear thee from thee all. I will not not,
+To see thee, this is come I say; for I know thou all,
+That thy fearful side, not no noble eyes
+Be married on what thou wilt say 'Em.' Alas, I can tell thee,
+Like a charit, would I were; you content
+---------------
+
+Men take it with all, I have no more.
+Most grief, how now, and I would weep shortly,
+To make this second all times, in this ignoble cast
+To accuse his grave sword.I Camillo, citizens,
+My mis-beast knew doth him tell thee him off men
+To the way of the people death. But He was thou all
+Whose traitor that thou art from the murderer,
+And that be not shortly as lost thou hast quickly himself
+To my repent. Where is not this bellieved?
+I think, no tongue me but your late, I will perchance
+Or wholesome 
+---------------
