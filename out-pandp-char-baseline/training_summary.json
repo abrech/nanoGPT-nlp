@@ -7,7 +7,7 @@
   "block_size": 256,
   "dropout": 0.2,
   "max_iters": 5000,
-  "final_train_loss": 0.22266103327274323,
-  "final_val_loss": 1.8821519613265991,
-  "training_time_min": 11.032009315490722
+  "final_train_loss": 0.23364531993865967,
+  "final_val_loss": 1.8450021743774414,
+  "training_time_min": 11.002253619829814
 }

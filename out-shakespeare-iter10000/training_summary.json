@@ -1,0 +1,13 @@
+{
+  "experiment": "iter10000",
+  "learning_rate": 0.0005,
+  "n_layer": 6,
+  "n_head": 6,
+  "n_embd": 384,
+  "block_size": 256,
+  "dropout": 0.1,
+  "max_iters": 10000,
+  "final_train_loss": 0.09459948539733887,
+  "final_val_loss": 3.066220283508301,
+  "training_time_min": 21.801986161867777
+}
