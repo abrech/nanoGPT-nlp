@@ -1,0 +1,214 @@
+C:\Uni\_dev\nanoGPT-nlp\train.py:197: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+C:\Uni\_dev\.venv\Lib\site-packages\torch\cuda\amp\grad_scaler.py:31: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  super().__init__(
+Overriding config with C:\Uni\_dev\nanoGPT-nlp\config\train_pandp_baseline.py:
+# Baseline configuration
+out_dir = 'out-pandp-baseline'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+always_save_checkpoint = False
+wandb_log = False
+wandb_project = 'nanoGPT-assignment'
+wandb_run_name = 'baseline'
+dataset = 'pride_and_prejudice'
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+weight_decay = 1e-1
+device = 'cpu' # change to 'cuda' if you have a GPU
+compile = False # set True only on Linux with GPU
+tokens per iteration will be: 16,384
+found vocab_size = 91 (inside data\pride_and_prejudice\meta.pkl)
+Initializing a new model from scratch
+number of parameters: 10.66M
+num decayed parameter tensors: 26, with 10,750,080 parameters
+num non-decayed parameter tensors: 13, with 4,992 parameters
+using fused AdamW: False
+step 0: train loss 4.5529, val loss 4.5642
+iter 0: loss 4.5651, time 829461.90ms, mfu -100.00%
+iter 10: loss 3.1837, time 10859.01ms, mfu 0.03%
+iter 20: loss 2.7716, time 10828.34ms, mfu 0.03%
+iter 30: loss 2.5945, time 10921.51ms, mfu 0.03%
+iter 40: loss 2.5394, time 10760.54ms, mfu 0.03%
+iter 50: loss 2.5288, time 11207.09ms, mfu 0.03%
+iter 60: loss 2.5083, time 10825.95ms, mfu 0.03%
+iter 70: loss 2.4886, time 10910.64ms, mfu 0.03%
+iter 80: loss 2.4816, time 10417.46ms, mfu 0.03%
+iter 90: loss 2.4437, time 10841.45ms, mfu 0.03%
+iter 100: loss 2.4584, time 8834.42ms, mfu 0.04%
+iter 110: loss 2.3804, time 8839.29ms, mfu 0.04%
+iter 120: loss 2.4353, time 8645.16ms, mfu 0.04%
+iter 130: loss 2.4183, time 8753.97ms, mfu 0.04%
+iter 140: loss 2.4034, time 8647.23ms, mfu 0.04%
+iter 150: loss 2.4071, time 8810.61ms, mfu 0.04%
+iter 160: loss 2.3494, time 8863.88ms, mfu 0.04%
+iter 170: loss 2.3132, time 8747.33ms, mfu 0.04%
+iter 180: loss 2.2939, time 5000.54ms, mfu 0.04%
+iter 190: loss 2.2360, time 4963.85ms, mfu 0.05%
+iter 200: loss 2.1644, time 6551.86ms, mfu 0.05%
+iter 210: loss 2.1165, time 6647.83ms, mfu 0.05%
+iter 220: loss 2.0327, time 6541.06ms, mfu 0.05%
+iter 230: loss 2.0135, time 6545.44ms, mfu 0.05%
+iter 240: loss 1.9355, time 6523.65ms, mfu 0.05%
+step 250: train loss 1.8220, val loss 1.8256
+saving checkpoint to out-pandp-baseline
+iter 250: loss 1.9031, time 561446.24ms, mfu 0.05%
+iter 260: loss 1.8828, time 6528.37ms, mfu 0.05%
+iter 270: loss 1.8742, time 6466.28ms, mfu 0.05%
+iter 280: loss 1.8202, time 6453.74ms, mfu 0.05%
+iter 290: loss 1.7974, time 6458.15ms, mfu 0.05%
+iter 300: loss 1.7716, time 6458.71ms, mfu 0.05%
+iter 310: loss 1.7412, time 6475.11ms, mfu 0.05%
+iter 320: loss 1.7041, time 6485.55ms, mfu 0.05%
+iter 330: loss 1.6788, time 6509.22ms, mfu 0.05%
+iter 340: loss 1.6395, time 6481.75ms, mfu 0.05%
+iter 350: loss 1.6527, time 6482.32ms, mfu 0.05%
+iter 360: loss 1.6294, time 6457.50ms, mfu 0.05%
+iter 370: loss 1.6318, time 6476.53ms, mfu 0.05%
+iter 380: loss 1.5960, time 6537.63ms, mfu 0.05%
+iter 390: loss 1.5689, time 6463.72ms, mfu 0.05%
+iter 400: loss 1.5221, time 6493.96ms, mfu 0.06%
+iter 410: loss 1.5263, time 6468.39ms, mfu 0.06%
+iter 420: loss 1.4989, time 6466.76ms, mfu 0.06%
+iter 430: loss 1.5206, time 6500.43ms, mfu 0.06%
+iter 440: loss 1.5145, time 6511.59ms, mfu 0.06%
+iter 450: loss 1.5125, time 6442.05ms, mfu 0.06%
+iter 460: loss 1.4568, time 6417.76ms, mfu 0.06%
+iter 470: loss 1.4417, time 6380.37ms, mfu 0.06%
+iter 480: loss 1.4354, time 6416.53ms, mfu 0.06%
+iter 490: loss 1.4268, time 6464.76ms, mfu 0.06%
+step 500: train loss 1.3222, val loss 1.3533
+saving checkpoint to out-pandp-baseline
+iter 500: loss 1.4507, time 544819.31ms, mfu 0.05%
+iter 510: loss 1.4411, time 6441.00ms, mfu 0.05%
+iter 520: loss 1.4180, time 6466.76ms, mfu 0.05%
+iter 530: loss 1.3850, time 6426.00ms, mfu 0.05%
+iter 540: loss 1.4080, time 6398.67ms, mfu 0.05%
+iter 550: loss 1.3805, time 6522.44ms, mfu 0.05%
+iter 560: loss 1.3825, time 6466.90ms, mfu 0.05%
+iter 570: loss 1.3544, time 6535.03ms, mfu 0.05%
+iter 580: loss 1.3452, time 6564.40ms, mfu 0.05%
+iter 590: loss 1.3369, time 6460.67ms, mfu 0.06%
+iter 600: loss 1.3084, time 6506.01ms, mfu 0.06%
+iter 610: loss 1.2928, time 6470.33ms, mfu 0.06%
+iter 620: loss 1.3002, time 6489.32ms, mfu 0.06%
+iter 630: loss 1.3233, time 6437.52ms, mfu 0.06%
+iter 640: loss 1.2874, time 6490.19ms, mfu 0.06%
+iter 650: loss 1.2927, time 6479.61ms, mfu 0.06%
+iter 660: loss 1.2575, time 6465.44ms, mfu 0.06%
+iter 670: loss 1.2571, time 6412.78ms, mfu 0.06%
+iter 680: loss 1.2566, time 6733.84ms, mfu 0.06%
+iter 690: loss 1.2655, time 6758.30ms, mfu 0.06%
+iter 700: loss 1.2647, time 6795.12ms, mfu 0.06%
+iter 710: loss 1.2429, time 6759.01ms, mfu 0.06%
+iter 720: loss 1.2404, time 6845.55ms, mfu 0.06%
+iter 730: loss 1.2260, time 5910.22ms, mfu 0.06%
+iter 740: loss 1.2286, time 5872.16ms, mfu 0.06%
+step 750: train loss 1.1283, val loss 1.1937
+saving checkpoint to out-pandp-baseline
+iter 750: loss 1.2621, time 478650.36ms, mfu 0.05%
+iter 760: loss 1.2341, time 5895.30ms, mfu 0.05%
+iter 770: loss 1.2273, time 5868.78ms, mfu 0.05%
+iter 780: loss 1.2144, time 7264.12ms, mfu 0.05%
+iter 790: loss 1.2234, time 8993.06ms, mfu 0.05%
+iter 800: loss 1.1698, time 7522.98ms, mfu 0.05%
+iter 810: loss 1.1948, time 7535.72ms, mfu 0.05%
+iter 820: loss 1.1675, time 7677.43ms, mfu 0.05%
+iter 830: loss 1.1861, time 7544.40ms, mfu 0.05%
+iter 840: loss 1.1720, time 8440.53ms, mfu 0.05%
+iter 850: loss 1.1848, time 7185.95ms, mfu 0.05%
+iter 860: loss 1.1492, time 7168.55ms, mfu 0.05%
+iter 870: loss 1.1804, time 6249.24ms, mfu 0.05%
+iter 880: loss 1.1703, time 7374.97ms, mfu 0.05%
+iter 890: loss 1.1111, time 7163.15ms, mfu 0.05%
+iter 900: loss 1.1457, time 6283.00ms, mfu 0.05%
+iter 910: loss 1.1396, time 7472.62ms, mfu 0.05%
+iter 920: loss 1.1729, time 7225.06ms, mfu 0.05%
+iter 930: loss 1.1332, time 8574.47ms, mfu 0.05%
+iter 940: loss 1.1329, time 8147.60ms, mfu 0.05%
+iter 950: loss 1.1522, time 6239.48ms, mfu 0.05%
+iter 960: loss 1.1286, time 6938.17ms, mfu 0.05%
+iter 970: loss 1.1565, time 7079.53ms, mfu 0.05%
+iter 980: loss 1.1514, time 7023.07ms, mfu 0.05%
+iter 990: loss 1.1378, time 7273.64ms, mfu 0.05%
+step 1000: train loss 1.0316, val loss 1.1380
+saving checkpoint to out-pandp-baseline
+iter 1000: loss 1.0944, time 527112.86ms, mfu 0.05%
+iter 1010: loss 1.1360, time 6358.31ms, mfu 0.05%
+iter 1020: loss 1.1235, time 8321.64ms, mfu 0.05%
+iter 1030: loss 1.1352, time 8323.81ms, mfu 0.05%
+iter 1040: loss 1.1292, time 10103.32ms, mfu 0.05%
+iter 1050: loss 1.0972, time 9815.26ms, mfu 0.05%
+iter 1060: loss 1.0941, time 10205.71ms, mfu 0.04%
+iter 1070: loss 1.1040, time 10069.35ms, mfu 0.04%
+iter 1080: loss 1.1054, time 9693.63ms, mfu 0.04%
+iter 1090: loss 1.1133, time 9970.09ms, mfu 0.04%
+iter 1100: loss 1.1034, time 10278.86ms, mfu 0.04%
+iter 1110: loss 1.0844, time 10170.38ms, mfu 0.04%
+iter 1120: loss 1.0891, time 10497.76ms, mfu 0.04%
+iter 1130: loss 1.0915, time 10322.77ms, mfu 0.04%
+iter 1140: loss 1.0377, time 10004.15ms, mfu 0.04%
+iter 1150: loss 1.0650, time 10938.70ms, mfu 0.04%
+iter 1160: loss 1.0494, time 10264.22ms, mfu 0.04%
+iter 1170: loss 1.0645, time 9924.00ms, mfu 0.04%
+iter 1180: loss 1.0732, time 10582.17ms, mfu 0.04%
+iter 1190: loss 1.0754, time 10239.43ms, mfu 0.04%
+iter 1200: loss 1.0317, time 10543.53ms, mfu 0.04%
+iter 1210: loss 1.0742, time 10819.92ms, mfu 0.04%
+iter 1220: loss 1.0693, time 10258.26ms, mfu 0.04%
+iter 1230: loss 1.0717, time 10152.70ms, mfu 0.04%
+iter 1240: loss 1.0873, time 10459.90ms, mfu 0.04%
+step 1250: train loss 0.9581, val loss 1.1147
+saving checkpoint to out-pandp-baseline
+iter 1250: loss 1.0669, time 888634.84ms, mfu 0.03%
+iter 1260: loss 1.0470, time 10347.75ms, mfu 0.03%
+Traceback (most recent call last):
+  File "C:\Uni\_dev\nanoGPT-nlp\train.py", line 302, in <module>
+    logits, loss = model(X, Y)
+                   ~~~~~^^^^^^
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Uni\_dev\nanoGPT-nlp\model.py", line 181, in forward
+    x = block(x)
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Uni\_dev\nanoGPT-nlp\model.py", line 104, in forward
+    x = x + self.attn(self.ln_1(x))
+            ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Uni\_dev\nanoGPT-nlp\model.py", line 75, in forward
+    y = self.resid_dropout(self.c_proj(y))
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\modules\dropout.py", line 73, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Uni\_dev\.venv\Lib\site-packages\torch\nn\functional.py", line 1443, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

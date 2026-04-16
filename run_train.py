@@ -9,7 +9,7 @@ CONFIG_DIR = ROOT / 'config'
 
 
 def find_train_configs():
-    return sorted(CONFIG_DIR.glob('train_shakespeare_char_*.py'))
+    return sorted(CONFIG_DIR.glob('train_pandp_*.py'))
 
 
 LOG_DIR = ROOT / 'logs'
@@ -30,7 +30,7 @@ def run_train_for_config(config_path, dry_run=False):
 
 def collect_summaries():
     summaries = []
-    for summary_path in sorted(ROOT.glob('out-shakespeare-*/training_summary.json')):
+    for summary_path in sorted(ROOT.glob('out-pandp-*/training_summary.json')):
         try:
             with open(summary_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
