@@ -1,62 +1,10 @@
 import argparse
+import json
 import os
 import re
 
 import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
-
-LOGS_DIR = "logs"
-PLOTS_DIR = "plots"
-
-HYPERPARAM_GROUPS = {
-    "learning_rate": {
-        "baseline_val": "1e-3",
-        "runs": {
-            "train_shakespeare_char_lr1e2.log": "1e-2",
-            "train_shakespeare_char_lr5e3.log": "5e-3",
-            "train_shakespeare_char_lr5e4.log": "5e-4",
-            "train_shakespeare_char_lr1e4.log": "1e-4",
-        },
-    },
-    "dropout": {
-        "baseline_val": "0.2",
-        "runs": {
-            "train_shakespeare_char_dropout0p0.log": "0.0",
-            "train_shakespeare_char_dropout0p1.log": "0.1",
-            "train_shakespeare_char_dropout0p4.log": "0.4",
-        },
-    },
-    "n_layer": {
-        "baseline_val": "6",
-        "runs": {
-            "train_shakespeare_char_nlayer2.log": "2",
-            "train_shakespeare_char_nlayer4.log": "4",
-            "train_shakespeare_char_nlayer8.log": "8",
-        },
-    },
-    "n_embd": {
-        "baseline_val": "384",
-        "runs": {
-            "train_shakespeare_char_nembd128.log": "128",
-            "train_shakespeare_char_nembd256.log": "256",
-        },
-    },
-    "max_iters": {
-        "baseline_val": "5000",
-        "runs": {
-            "train_shakespeare_char_maxiters1000.log": "1000",
-            "train_shakespeare_char_maxiters2500.log": "2500",
-            "train_shakespeare_char_maxiters10000.log": "10000",
-        },
-    },
-    "block_size": {
-        "baseline_val": "256",
-        "runs": {
-            "train_shakespeare_char_bs64.log": "64",
-            "train_shakespeare_char_bs128.log": "128",
-        },
-    },
-}
 
 STEP_PATTERN = re.compile(
     r"^step (\d+): train loss ([\d.]+), val loss ([\d.]+)"
@@ -85,19 +33,33 @@ def parse_log(filepath):
     return steps, train_losses, val_losses
 
 
+def load_groups(groups_path):
+    with open(groups_path, "r", encoding="utf-8") as f:
+        cfg = json.load(f)
+    baseline_log = cfg.get("baseline_log", "baseline.log")
+    groups = cfg.get("groups", {})
+    return baseline_log, groups
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Plot training logs")
-    parser.add_argument(
-        "--val", action="store_true", help="Also plot validation loss"
-    )
+    parser = argparse.ArgumentParser(description="Plot training logs grouped by hyperparameter.")
+    parser.add_argument("--logs-dir", default="logs/shakespeare_char",
+                        help="Directory that contains the .log files to plot")
+    parser.add_argument("--plots-dir", default="plots",
+                        help="Directory where the PNGs are written")
+    parser.add_argument("--groups", default="plotting.config.json",
+                        help="JSON file describing the baseline log and the hyperparameter groups")
+    parser.add_argument("--val", action="store_true",
+                        help="Also plot validation loss as a dashed lighter line")
     args = parser.parse_args()
 
-    os.makedirs(PLOTS_DIR, exist_ok=True)
+    os.makedirs(args.plots_dir, exist_ok=True)
 
-    baseline_path = os.path.join(LOGS_DIR, "train_shakespeare_char_baseline.log")
+    baseline_log, groups = load_groups(args.groups)
+    baseline_path = os.path.join(args.logs_dir, baseline_log)
     bl_steps, bl_train, bl_val = parse_log(baseline_path)
 
-    for hp_name, group in HYPERPARAM_GROUPS.items():
+    for hp_name, group in groups.items():
         fig, ax = plt.subplots(figsize=(10, 6))
 
         color = COLORS[0]
@@ -114,7 +76,7 @@ def main():
             )
 
         for i, (logfile, val) in enumerate(group["runs"].items(), start=1):
-            path = os.path.join(LOGS_DIR, logfile)
+            path = os.path.join(args.logs_dir, logfile)
             steps, train_losses, val_losses = parse_log(path)
             color = COLORS[i % len(COLORS)]
             ax.plot(
@@ -131,11 +93,11 @@ def main():
 
         ax.set_xlabel("Step")
         ax.set_ylabel("Loss")
-        ax.set_title(f"Loss vs. Step — varying {hp_name}")
+        ax.set_title(f"Loss vs. Step - varying {hp_name}")
         ax.legend()
         ax.grid(True, alpha=0.3)
 
-        out_path = os.path.join(PLOTS_DIR, f"{hp_name}.png")
+        out_path = os.path.join(args.plots_dir, f"{hp_name}.png")
         fig.savefig(out_path, dpi=150, bbox_inches="tight")
         plt.close(fig)
         print(f"Saved {out_path}")

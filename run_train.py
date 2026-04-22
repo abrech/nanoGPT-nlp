@@ -1,36 +1,33 @@
 ﻿import argparse
+import glob
 import json
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-CONFIG_DIR = ROOT / 'config'
 
 
-def find_train_configs():
-    return sorted(CONFIG_DIR.glob('train_shakespeare_optimal_*.py'))
+def find_configs(config_glob):
+    return sorted(Path(p) for p in glob.glob(config_glob, recursive=True))
 
 
-LOG_DIR = ROOT / 'logs'
-
-
-def run_train_for_config(config_path, dry_run=False):
+def run_train_for_config(config_path, log_dir, dry_run=False):
     cmd = [sys.executable, str(ROOT / 'train.py'), str(config_path)]
-    log_path = LOG_DIR / f'{config_path.stem}.log'
+    log_path = log_dir / f'{config_path.stem}.log'
     print(f'=== Training with {config_path.name} ===')
     print(' '.join(cmd))
     print(f'Logging output to {log_path}')
     if dry_run:
         return
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
+    log_dir.mkdir(parents=True, exist_ok=True)
     with open(log_path, 'w', encoding='utf-8') as log_file:
         subprocess.run(cmd, check=True, stdout=log_file, stderr=subprocess.STDOUT)
 
 
-def collect_summaries():
+def collect_summaries(summary_glob):
     summaries = []
-    for summary_path in sorted(ROOT.glob('out-shakespeare-iter*/training_summary.json')):
+    for summary_path in sorted(glob.glob(summary_glob, recursive=True)):
         try:
             with open(summary_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
@@ -64,27 +61,37 @@ def print_summary_table(summaries):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Run train.py for all shakespeare char config files.')
-    parser.add_argument('--dry-run', action='store_true', help='Show commands without executing them')
-    parser.add_argument('--include-baseline', action='store_true', help='Include the baseline config file in the run list')
-    parser.add_argument('--filter', type=str, default=None, help='Only run configs matching this substring')
+    parser = argparse.ArgumentParser(
+        description='Run train.py for every config file matching a glob pattern.'
+    )
+    parser.add_argument('--config-glob', type=str,
+                        default='config/shakespeare_char/optimal_*.py',
+                        help='Glob pattern for config files to train, relative to repo root')
+    parser.add_argument('--log-dir', type=Path,
+                        default=ROOT / 'logs' / 'shakespeare_char',
+                        help='Directory for per-run training logs')
+    parser.add_argument('--summary-glob', type=str,
+                        default='out/shakespeare_char/optimal_*/training_summary.json',
+                        help='Glob pattern for training_summary.json files to aggregate at the end')
+    parser.add_argument('--filter', type=str, default=None,
+                        help='Only run configs whose filename contains this substring')
+    parser.add_argument('--dry-run', action='store_true',
+                        help='Show commands without executing them')
     args = parser.parse_args()
 
-    configs = find_train_configs()
-    if not args.include_baseline:
-        configs = [p for p in configs if p.name != 'train_shakespeare_char_baseline.py']
+    configs = find_configs(args.config_glob)
     if args.filter is not None:
         configs = [p for p in configs if args.filter in p.name]
 
     if not configs:
-        print('No training config files found.')
+        print(f'No training config files matched: {args.config_glob}')
         return
 
     for config_path in configs:
-        run_train_for_config(config_path, dry_run=args.dry_run)
+        run_train_for_config(config_path, args.log_dir, dry_run=args.dry_run)
 
     if not args.dry_run:
-        summaries = collect_summaries()
+        summaries = collect_summaries(args.summary_glob)
         print_summary_table(summaries)
 
 

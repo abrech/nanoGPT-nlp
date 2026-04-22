@@ -1,0 +1,52 @@
+{
+  "baseline_log": "baseline.log",
+  "groups": {
+    "learning_rate": {
+      "baseline_val": "1e-3",
+      "runs": {
+        "lr1e2.log": "1e-2",
+        "lr5e3.log": "5e-3",
+        "lr5e4.log": "5e-4",
+        "lr1e4.log": "1e-4"
+      }
+    },
+    "dropout": {
+      "baseline_val": "0.2",
+      "runs": {
+        "dropout0p0.log": "0.0",
+        "dropout0p1.log": "0.1",
+        "dropout0p4.log": "0.4"
+      }
+    },
+    "n_layer": {
+      "baseline_val": "6",
+      "runs": {
+        "nlayer2.log": "2",
+        "nlayer4.log": "4",
+        "nlayer8.log": "8"
+      }
+    },
+    "n_embd": {
+      "baseline_val": "384",
+      "runs": {
+        "nembd128.log": "128",
+        "nembd256.log": "256"
+      }
+    },
+    "max_iters": {
+      "baseline_val": "5000",
+      "runs": {
+        "maxiters1000.log": "1000",
+        "maxiters2500.log": "2500",
+        "maxiters10000.log": "10000"
+      }
+    },
+    "block_size": {
+      "baseline_val": "256",
+      "runs": {
+        "bs64.log": "64",
+        "bs128.log": "128"
+      }
+    }
+  }
+}

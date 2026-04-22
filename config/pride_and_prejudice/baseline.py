@@ -1,5 +1,5 @@
 # Baseline configuration
-out_dir = 'out-pandp-baseline'
+out_dir = 'out/pride_and_prejudice/baseline'
 eval_interval = 250
 eval_iters = 200
 log_interval = 10

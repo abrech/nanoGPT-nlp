@@ -1,5 +1,5 @@
 # Baseline configuration
-out_dir = 'out-shakespeare-iter10000'
+out_dir = 'out/shakespeare_char/optimal_iter10000'
 eval_interval = 250
 eval_iters = 200
 log_interval = 10

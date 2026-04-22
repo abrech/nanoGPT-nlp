@@ -1,5 +1,5 @@
 # Baseline configuration
-out_dir = 'out-shakespeare-nlayer2'
+out_dir = 'out/shakespeare_char/nlayer2'
 eval_interval = 250
 eval_iters = 200
 log_interval = 10
@@ -22,5 +22,5 @@ min_lr = 1e-4
 beta2 = 0.99
 warmup_iters = 100
 weight_decay = 1e-1
-device = 'cuda' # change to 'cuda' if you have a GPU
+device = 'cpu' # change to 'cuda' if you have a GPU
 compile = False # set True only on Linux with GPU
