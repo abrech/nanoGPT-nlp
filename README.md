@@ -93,6 +93,16 @@ Parses the `step N: train loss X, val loss Y` lines out of every `.log` file lis
 python plotting.py --logs-dir logs/shakespeare_char --plots-dir plots --val
 ```
 
+### `plot_assignment.py`
+
+Creates the assignment plot by using console outputs in `.log`.
+
+```bash
+python plot_assignment.py --logs-dir logs/shakespeare_char --plots-dir plots
+# -> plots/assignment_train_loss.png
+# -> plots/assignment_val_loss.png
+```
+
 ### `hyperparameters.config.json`
 
 The values `run_samples.py` uses. One list per hyperparameter, if a value equals the baseline's value it's skipped automatically:
