@@ -25,7 +25,6 @@ with open(input_file_path, 'r', encoding="utf-8") as f:
     data = f.read()
 print(f"length of dataset in characters: {len(data):,}")
 
-# PREEEPROCESSING IYAHHHH
 # Remove [Illustration: ...] using good old finger counting
 # (regex with nested brackets is not ok)
 look_for = '[Illustration'
@@ -60,9 +59,7 @@ vocab_size = len(vocab)
 print("all the unique characters:", ''.join(vocab))
 print(f"vocab size: {vocab_size:,}")
 
-# BPE LETS GOOOOO
-# store merges we already "found"
-
+# BPE starting here
 parser = argparse.ArgumentParser()
 parser.add_argument('--k', type=int, default=500, help='number of BPE merge operations')
 args = parser.parse_args()

@@ -2,6 +2,8 @@
 
 A fork of Karpathy's [nanoGPT](https://github.com/karpathy/nanoGPT) to make working on the assignment easier.
 
+Our approach to the assignment can be found at the [end of the file](#code-run-for-the-assignment).
+
 ## Structure
 
 ```
@@ -132,3 +134,29 @@ The dataset layout the plotter uses:
 }
 ```
 
+## Code run for the assignment
+> Changes to files from the original repository are marked with a comment "----------------- CHANGE DONE FOR ASSIGNMENT -----------------".  
+> Original files changed: `train.py`
+
+### 3. Hyperparameter Experiments
+Instead of training for each configuration individually, we added a script to execute multiple trainings at once. These are `run_train.py`. For **3. Hyperparameter Experiments**, we used the `hyperparameters.config.json` to systematically run _all_ experiments. The results can be found in `out/shakespeare_char/*`. The train logs were redirected to `logs/shakespeare_char/*` for later processing.  
+Furthermore, we added some code to the `train.py` to handle execution via `run_train.py`.
+
+#### max_iters note
+The value of `max_iters` is especially dependent on other parameter values, since those directly influence the learning of the model, while `max_iters` just dictates when to stop.  
+Therefore, we ran all experiments once, and then reran the `max_iters` experiments again, with the other hyperparameters set to what we found to be their optimal values.  
+The results of this second `max_iters` run can be found in `out/shakespeare_char/optimal_iter*`.
+
+### 4. Evaluation and Reporting
+#### Plotting
+For 4., we used the redirected logs from the `run_training.py` in `logs/shakespeare_char`. Instead of just plotting the two specified plots, we decided to add a script `plotting.py` to give us a more diverse overview to evaluate the optimal hyperparameters. The plots specified in the assignment are created by `plot_assignment.py`.
+
+#### Sampling
+For sampling, we also added a script `run_samples.py` to automate the process. Samples were redirected to `out/shakespeare_char/*`.
+
+### 5. Bonus
+#### Dataset
+As a dataset we chose Pride and Prejudice by Jane Austen. For character level tokenization, we copied the `data/shakespeare_char/prepare.py` and changed the dataset URL. 
+
+#### BPE
+BPE was used on the custom dataset in `data/pride_and_prejudice/prepare.py`. We did this, because the dataset is a lot smaller and our BPE implementation takes a lot of time. Furthermore, it was easier to determine an appropriate `k` for the number of merges, since it was easier to get an overview over the vocabulary after running BPE.

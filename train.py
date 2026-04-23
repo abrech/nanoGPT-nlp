@@ -249,8 +249,13 @@ if wandb_log and master_process:
 
 # training loop
 X, Y = get_batch('train') # fetch the very first batch
+
+# ----------------- CHANGE DONE FOR ASSIGNMENT -----------------
+# save training time for later
 training_start_time = time.time()
 t0 = training_start_time
+# -------------------------------------------------------------
+
 local_iter_num = 0 # number of iterations in the lifetime of this process
 raw_model = model.module if ddp else model # unwrap DDP container if needed
 running_mfu = -1.0
@@ -334,6 +339,9 @@ while True:
     if iter_num > max_iters:
         break
 
+# ----------------- CHANGE DONE FOR ASSIGNMENT -----------------
+# this is necessary to distinguish between running train.py directly
+# vs. executing it via run_train.py
 if master_process:
     # estimate final metrics at the end of training and save a summary file
     final_losses = estimate_loss()
@@ -358,6 +366,8 @@ if master_process:
     print("Training summary:")
     for k, v in summary.items():
         print(f"  {k}: {v}")
+
+# -------------------------------------------------------------
 
 if ddp:
     destroy_process_group()

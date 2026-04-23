@@ -9,7 +9,7 @@ import pickle
 import requests
 import numpy as np
 
-# download the tiny shakespeare dataset
+# download the pride and prejudice dataset
 input_file_path = os.path.join(os.path.dirname(__file__), 'input.txt')
 if not os.path.exists(input_file_path):
     data_url = 'https://www.gutenberg.org/cache/epub/1342/pg1342.txt'
